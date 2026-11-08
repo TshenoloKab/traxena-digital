@@ -1,57 +1,87 @@
 # Traxena Digital
 
-A polished, responsive, modern SaaS-inspired website for **Traxena Digital** (Botswana) — Website Design & Digital Solutions. Brand tagline: *Build. Innovate. Grow.* Preferred domain: *traxenadigital.com* (not yet configured).
+A polished, responsive, modern SaaS-inspired website for Traxena Digital - Website Design & Digital Solutions. Brand tagline: Build. Innovate. Grow. Preferred domain: traxenadigital.com
 
-## Tech stack
-- React 19 + TypeScript + Vite
+**Build. Innovate. Grow.**
+
+## Live website
+
+- **Production:** https://traxena-digital.vercel.app
+- **Custom domain:** https://traxenadigital.com (pending DNS configuration; not yet connected)
+
+## Technology stack
+
+- React 19
+- TypeScript
+- Vite
 - React Router
-- CSS (custom design tokens, no heavy UI framework)
+- Custom CSS (design tokens, no heavy UI framework)
 
 ## Pages
-- Home, Services, Work/Portfolio, About, Contact, 404
 
-## Design system
-- Colors: soft lavender `#F6F3FF`, pale lavender `#EEE8FF`, deep indigo `#4338CA`, electric violet `#8B5CF6`, midnight navy `#111827`, charcoal `#1F2937`, slate `#64748B`, white `#FFFFFF`, borders `#E5E7EB`
-- Typography: Space Grotesk (headings), Inter (body/nav/forms/buttons)
+- Home
+- Services
+- Work / Portfolio
+- About
+- Contact
+- 404
 
-## Logo
-A temporary PNG placeholder is included at `/public/traxena-logo.png`, derived from the existing `logo-traxena.jpg` asset. **No official Traxena Digital logo was found in the workspace.** Replace it with the official logo before launch and ensure it remains legible on backgrounds. The logo links to the homepage.
+## Design and user experience
 
-## Getting started (local)
+- Responsive layouts across desktop, tablet and mobile
+- Lavender / violet / navy colour palette
+- Space Grotesk (headings) and Inter (body text) typography
+- Light and dark theme support
+- Interactive and accessible elements throughout
+
+## Portfolio
+
+The six projects below are **demonstration projects created for portfolio purposes** — they are not commissioned client projects.
+
+- Author's Studio — Author Branding
+- Cleaning Pro — Cleaning Services
+- Elan Beauty Studio — Beauty & Wellness
+- Ngwao Couture — Fashion & Retail
+- Setho Kitchen — Food & Catering
+- Trixtin AI — AI Solutions
+
+## Contact form
+
+Enquiries are delivered via **FormSubmit** to **traxenadigital@gmail.com**. The form includes client-side validation, a honeypot field and other spam-prevention measures, and clearly reports success or failure. Live delivery depends on FormSubmit’s activation for the deployed domain.
+
+## Getting started
+
 ```bash
+git clone https://github.com/TshenoloKab/traxena-digital.git
+cd traxena-digital
 npm install
 npm run dev
 ```
+
 Open http://localhost:5173
 
-## Build for production
+## Production build
+
 ```bash
-npm run build
-npm run preview
+npm run build   # builds to dist/
+npm run preview # serves the production build locally (default port 4173)
 ```
 
-## Deployment preparation
-- **Hosting**: Any static host (e.g. Vercel, Netlify, Cloudflare Pages) works. Build outputs to `dist/`.
-- **Build command**: `npm run build`
-- **Output directory**: `dist`
-- **Local preview**: `npm run preview` (serves `dist`, default port 4173)
-- **SPA routing**: `vercel.json`, `netlify.toml`, and `public/_redirects` are included for client-side route fallbacks.
-- **Environment variables**: optional `VITE_CONTACT_FORM_ENDPOINT` (HTTPS endpoint accepting JSON POST). Copy `.env.example` to `.env.local` for local testing. Never commit `.env*` (already ignored). Vite only exposes `VITE_`-prefixed variables; do not put secrets in them.
-- **Domain**: `traxenadigital.com` is not assumed to be registered or configured. `og:url`/canonical tags were intentionally omitted. Re-add them only after the final domain resolves.
-- **Contact form**: uses FormSubmit to deliver enquiries to `traxenadigital@gmail.com` by default. The address has been activated with FormSubmit, and live delivery was verified. The form includes a honeypot, validates client-side, and shows success/error status. Verify spam protection, test delivery, and publish confirmed contact details before launch.
-- **Assets**: supply an official logo, real portfolio screenshots/demos, and confirmed contact details if you want them published.
-- **Notes**: No analytics/tracking, no secrets, no backend/db/auth. Portfolio shows an honest empty state until real work exists.
+## Deployment
 
-## Verification
-- `npm run build` passes.
-- `npm run lint` passes with 0 warnings and 0 errors.
-- No automated test suite is configured (`npm test` is not available).
-- Headless Chrome checks covered all routes at 1440px, 768px, 390px, and 320px with no horizontal overflow or console errors.
-- Contact form behaviour was verified against the real FormSubmit endpoint: validation errors, rejection while activation is pending, and no false success message.
-- Contact form behaviour was also verified against a local mock endpoint: successful submission, field reset, and duplicate-submission prevention.
-- Contact form behaviour was verified against the real FormSubmit endpoint: validation errors, successful live delivery, field reset, and no console errors.
+- **Hosting:** Vercel
+- **Repository:** https://github.com/TshenoloKab/traxena-digital
+- **Branch:** `main` (production)
+- **Automatic deployments:** pushes to `main` trigger production deployments
+- **Output directory:** `dist`
+- **Build command:** `npm run build`
 
-## Notes on scope
-- Focus: Website Design & Digital Solutions.
-- No fake testimonials/clients/stats. No guaranteed rankings/growth/enterprise promises.
-- Ongoing maintenance is not advertised as a standard service.
+## Environment variables
+
+`VITE_CONTACT_FORM_ENDPOINT` — optional override for the contact form’s JSON POST endpoint. When left unset, the form uses the default FormSubmit endpoint for `traxenadigital@gmail.com`.
+
+See `.env.example` for details. Do not commit `.env*` files (already ignored); never put secrets in `VITE_`-prefixed variables.
+
+## Project scope
+
+This is a static frontend application. There is currently **no custom backend, database or authentication system**. The contact form is handled by FormSubmit; there is no server-side storage or user management.
