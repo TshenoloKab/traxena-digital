@@ -5,21 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Traxena Digital | Build. Innovate. Grow.</title>
     <meta name="description" content="Traxena Digital designs professional websites and practical digital solutions for service providers and small businesses in Botswana and beyond." />
-    <meta name="theme-color" content="#4338CA" />
+    <meta name="theme-color" content="#FFFFFF" />
     <script>
       (function () {
-        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-        var theme = prefersDark ? 'dark' : 'light';
-        try {
-          var stored = localStorage.getItem('traxena-theme');
-          if (stored === 'dark' || stored === 'light') theme = stored;
-        } catch (error) {
-          // Storage can be unavailable in private mode; fall back to the system preference.
+        var stored = null;
+        try { stored = localStorage.getItem('traxena-theme'); } catch (error) {
+          // Storage unavailable; fall back to the default light theme.
         }
+        var theme = stored === 'dark' || stored === 'light' ? stored : 'light';
         document.documentElement.dataset.theme = theme;
         document.documentElement.style.colorScheme = theme;
         var themeColor = document.querySelector('meta[name="theme-color"]');
-        if (themeColor) themeColor.setAttribute('content', theme === 'dark' ? '#0B1020' : '#4338CA');
+        if (themeColor) themeColor.setAttribute('content', theme === 'dark' ? '#08101F' : '#FFFFFF');
       })();
     </script>
     <meta property="og:title" content="Traxena Digital | Build. Innovate. Grow." />
