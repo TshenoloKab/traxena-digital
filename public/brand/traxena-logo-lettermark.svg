@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 128" role="img" aria-labelledby="title desc" fill="none">
+  <title id="title">Traxena Digital logo</title>
+  <desc id="desc">Abstract T and X lettermark with the Traxena Digital wordmark.</desc>
+  <rect width="520" height="128" fill="#ffffff" />
+  <defs>
+    <linearGradient id="traxena-lettermark" x1="12" y1="18" x2="78" y2="96">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+  </defs>
+  <path d="M18 24H78" stroke="#172554" stroke-width="9" stroke-linecap="round" />
+  <path d="M48 24V94" stroke="#172554" stroke-width="9" stroke-linecap="round" />
+  <path d="M22 94L74 24" stroke="url(#traxena-lettermark)" stroke-width="7" stroke-linecap="round" />
+  <path d="M74 94L22 24" stroke="url(#traxena-lettermark)" stroke-width="7" stroke-linecap="round" opacity="0.72" />
+  <text x="108" y="72" font-family="Space Grotesk, Inter, Arial, sans-serif" font-size="68" font-weight="700" fill="#172554" letter-spacing="-3">Traxena</text>
+  <text x="108" y="101" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="600" fill="#334155" letter-spacing="4">DIGITAL</text>
+  <text x="108" y="121" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" fill="#8b5cf6" letter-spacing="2.2">BUILD. INNOVATE. GROW.</text>
+</svg>

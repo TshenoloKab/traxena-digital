@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title desc" fill="none">
+  <title id="title">Traxena Digital mark</title>
+  <desc id="desc">Standalone Traxena technology mark.</desc>
+  <defs>
+    <linearGradient id="traxena-mark-small" x1="18" y1="18" x2="102" y2="102">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+  </defs>
+  <rect x="12" y="12" width="96" height="96" rx="22" fill="url(#traxena-mark-small)" />
+  <path d="M36 46H84M60 46V88" stroke="#ffffff" stroke-width="9" stroke-linecap="round" />
+  <path d="M36 88L84 46" stroke="rgba(255,255,255,0.34)" stroke-width="6" stroke-linecap="round" />
+</svg>

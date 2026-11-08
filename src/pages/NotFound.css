@@ -1,0 +1,39 @@
+.not-found {
+  padding: clamp(3.5rem, 8vw, 6rem) 0;
+}
+
+.not-found__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.85rem;
+}
+
+.not-found__code {
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 8vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: var(--color-primary);
+}
+
+.not-found__title {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+}
+
+.not-found__text {
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--color-text-secondary);
+  max-width: 46ch;
+}
+
+.not-found__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
