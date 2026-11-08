@@ -7,7 +7,7 @@ A polished, responsive, modern SaaS-inspired website for Traxena Digital - Websi
 ## Live website
 
 - **Production:** https://traxena-digital.vercel.app
-- **Custom domain:** https://traxenadigital.com (pending DNS configuration; not yet connected)
+- **Custom domain:** https://traxenadigital.com
 
 ## Technology stack
 
