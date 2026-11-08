@@ -47,7 +47,7 @@
 .about-preview {
   border-radius: 1.25rem;
   border: 1px solid var(--color-border);
-  background: var(--color-white);
+  background: var(--color-surface);
   box-shadow: 0 30px 60px rgba(23, 37, 84, 0.06);
   overflow: hidden;
 }
@@ -92,7 +92,7 @@
 
 .section--navy .section__title,
 .section--navy .cta__title {
-  color: var(--color-navy);
+  color: var(--color-heading);
 }
 
 .section--navy .cta__lead {

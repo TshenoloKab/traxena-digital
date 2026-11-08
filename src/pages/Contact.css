@@ -63,7 +63,7 @@
 .form-label {
   font-size: 0.9375rem;
   font-weight: 600;
-  color: var(--color-navy);
+  color: var(--color-heading);
 }
 
 .form-input,
@@ -74,8 +74,14 @@
   font-family: var(--font-body);
   font-size: 1rem;
   line-height: 1.5;
-  background: var(--color-white);
+  background: var(--color-surface);
   color: var(--color-text);
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: var(--color-muted);
+  opacity: 1;
 }
 
 .form-textarea {
@@ -106,19 +112,19 @@
 
 .form-status {
   border: 1px solid color-mix(in srgb, var(--color-primary) 22%, var(--color-border));
-  background: color-mix(in srgb, var(--color-accent) 10%, var(--color-white));
+  background: color-mix(in srgb, var(--color-accent) 10%, var(--color-surface));
   border-radius: 0.7rem;
   padding: 0.9rem 1rem;
 }
 
 .form-status--success {
   border-color: color-mix(in srgb, var(--color-primary) 30%, var(--color-border));
-  background: color-mix(in srgb, var(--color-accent) 16%, var(--color-white));
+  background: color-mix(in srgb, var(--color-accent) 16%, var(--color-surface));
 }
 
 .form-status--error {
   border-color: color-mix(in srgb, var(--color-danger) 45%, var(--color-border));
-  background: color-mix(in srgb, var(--color-danger) 10%, var(--color-white));
+  background: color-mix(in srgb, var(--color-danger) 10%, var(--color-surface));
 }
 
 .form-status__title {
@@ -126,11 +132,11 @@
   font-size: 0.9375rem;
   font-weight: 600;
   line-height: 1.4;
-  color: var(--color-navy);
+  color: var(--color-heading);
 }
 
 .form-status--error .form-status__title {
-  color: var(--color-danger-strong);
+  color: var(--color-danger);
 }
 
 .form-status__text {

@@ -48,19 +48,19 @@
   justify-content: center;
   width: 2.75rem;
   height: 2.75rem;
-  border: 1px solid #e2dcf8;
+  border: 1px solid var(--color-border);
   border-radius: 50%;
-  background: #f3f0ff;
-  color: #172554;
+  background: var(--color-bg-lavender);
+  color: var(--color-heading);
   box-shadow: none;
   cursor: pointer;
   transition: background-color 0.18s ease, border-color 0.18s ease, color 0.18s ease;
 }
 
 .showcase__arrow:hover {
-  border-color: #2563eb;
-  background: #2563eb;
-  color: #ffffff;
+  border-color: var(--color-primary);
+  background: var(--color-primary);
+  color: var(--color-white);
 }
 
 .showcase__arrow svg {

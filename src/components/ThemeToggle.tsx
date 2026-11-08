@@ -15,7 +15,7 @@ export default function ThemeToggle() {
     document.documentElement.style.colorScheme = theme
     document
       .querySelector('meta[name="theme-color"]')
-      ?.setAttribute('content', theme === 'dark' ? '#0B1020' : '#4338CA')
+      ?.setAttribute('content', theme === 'dark' ? '#08101F' : '#FFFFFF')
     try {
       localStorage.setItem('traxena-theme', theme)
     } catch {
